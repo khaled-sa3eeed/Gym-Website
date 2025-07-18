@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="cssBootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+</head>
+
+<body>
+
+    <div class="nav justify-content-center">
+        <img src="images/logo.png" alt="" class="logo">
+        <a class="nav-link active " href="homePage.html">Home</a>
+        <a class="nav-link active" href="train.html">Train</a>
+        <a class="nav-link active" href="store.html">Store</a>
+        <a class="nav-link active" href="homePage.html">About us</a>
+        <a class="nav-link active" href="homePage.html">Find us</a>
+        <a class="nav-link active" href="membership.html">Membership</a>
+        <a class="nav-link active" href="login.html">Login</a>
+        <a class="nav-link active" href="rigister.html">Rigister</a>
+        <a class="nav-link active" href="myAccount.html">My Account</a>
+
+        <a class="nav-link active" href="https://x.com/GoldsGym" class="fa fa-twitter"></a>
+        <a class="nav-link active" href="https://www.facebook.com/goldsgym/" class="fa fa-facebook"></a>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="videos/videoplayback.mp4" type="video/mp4">
+    </video>
+
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+
+                            <div class="mb-md-5 mt-md-4 pb-5">
+
+                                <h2 class="fw-bold mb-2 text-uppercase"><svg xmlns="http://www.w3.org/2000/svg"
+                                        height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFF55">
+                                        <path
+                                            d="m826-585-46.67-46.67 40-40.33L672-819.33l-40.33 40L584-827l30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L94.67-242.33q-19-19.26-19-47.3 0-28.04 19-47.04L134-376l47.67 47-40.34 40L289-141.33l40-40.34L376-134l-30 30Zm397-317.33L818.67-497 497-818.67 421.33-743 743-421.33Zm-280 280L539.33-218 218-539.33 141.33-463 463-141.33Zm4-243.34 109.33-109-82.66-82.66-109 109.33L467-384.67Zm43 290q-18.96 19-46.98 19-28.02 0-47.02-19L94.67-416q-19-18.96-19-46.98 0-28.02 19-47.02l75.66-76.33q19.26-19 47.3-19 28.04 0 47.04 19L337-514l110-110-72.33-72q-19-18.96-19-46.98 0-28.02 19-47.02l75.66-76.33q19.26-19 47.3-19 28.04 0 47.04 19l321.66 321.66q19 19.26 19 47.3 0 28.04-19 47.04L790-374.67q-18.96 19-46.98 19-28.02 0-47.02-19L624-447 514-337l72.33 72.33q19 19.26 19 47.3 0 28.04-19 47.04L510-94.67Z" />
+                                    </svg> Login <svg xmlns="http://www.w3.org/2000/svg" height="40px"
+                                        viewBox="0 -960 960 960" width="40px" fill="#FFFF55">
+                                        <path
+                                            d="m826-585-46.67-46.67 40-40.33L672-819.33l-40.33 40L584-827l30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L94.67-242.33q-19-19.26-19-47.3 0-28.04 19-47.04L134-376l47.67 47-40.34 40L289-141.33l40-40.34L376-134l-30 30Zm397-317.33L818.67-497 497-818.67 421.33-743 743-421.33Zm-280 280L539.33-218 218-539.33 141.33-463 463-141.33Zm4-243.34 109.33-109-82.66-82.66-109 109.33L467-384.67Zm43 290q-18.96 19-46.98 19-28.02 0-47.02-19L94.67-416q-19-18.96-19-46.98 0-28.02 19-47.02l75.66-76.33q19.26-19 47.3-19 28.04 0 47.04 19L337-514l110-110-72.33-72q-19-18.96-19-46.98 0-28.02 19-47.02l75.66-76.33q19.26-19 47.3-19 28.04 0 47.04 19l321.66 321.66q19 19.26 19 47.3 0 28.04-19 47.04L790-374.67q-18.96 19-46.98 19-28.02 0-47.02-19L624-447 514-337l72.33 72.33q19 19.26 19 47.3 0 28.04-19 47.04L510-94.67Z" />
+                                    </svg></h2>
+                                <p class="text-white-50 mb-5">Please enter your email and password!</p>
+
+                                <div data-mdb-input-init class="form-outline form-white mb-4">
+                                    <input type="email" id="typeEmailX" class="form-control form-control-lg"
+                                        placeholder="Email" />
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline form-white mb-4">
+                                    <input type="password" id="typePasswordX" class="form-control form-control-lg"
+                                        placeholder="Password" />
+
+                                </div>
+
+                                <!-- <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a> -->
+                                </p>
+
+                                <a href="homePage.html">
+
+                                    <button data-mdb-button-init data-mdb-ripple-init
+                                        class="btn btn-outline-light btn-lg px-5" type="submit"><svg
+                                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 760"
+                                            width="25px" fill="#F9DB78">
+                                            <path
+                                                d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z" />
+                                        </svg>Login</button>
+                                </a>
+
+                                <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                                    <a href="https://www.facebook.com/" class="text-white"><i
+                                            class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="https://www.twitter.com" class="text-white"><i
+                                            class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                                    <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Ftab%3Dkk&ec=GAlAwAE&hl=ar&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1761350500%3A1723900223626586&ddm=0"
+                                        class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                                </div>
+
+                            </div>
+                            <div>
+                                <p class="mb-0">Don't have an account? <a href="rigister.html"
+                                        class="text-white-50 fw-bold">Sign
+                                        Up</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
