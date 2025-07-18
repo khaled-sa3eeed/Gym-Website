@@ -1,0 +1,18 @@
+body {
+    background-image: url(images/backgroundSignIn.jpg);
+    background-size: 100%;
+    
+}
+
+a:hover{
+    text-decoration-line: none;
+}
+
+.logo {
+    position: relative;
+    top: 2px;
+    left: -10px;
+    width: 40px;
+    height: 35px;
+    
+}

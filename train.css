@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+.navBar {
+    background-color: rgba(0, 0, 0, 0.833);
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 50px;
+    font-size: larger;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.logo {
+    position: relative;
+    top: 2px;
+    left: 30px;
+    width: 50px;
+    height: 45px;
+
+}
+
+a {
+    margin-left: 30px;
+    text-decoration-line: none;
+    color: rgb(222, 178, 4);
+
+    position: relative;
+    left: 75px;
+
+    padding-top: 15px;
+}
+
+.fa {
+    position: relative;
+    left: 400px;
+}
+
+a:hover {
+    color: brown;
+    margin-top: 2px;
+}
+
+button:hover {
+    color: brown;
+    cursor: pointer;
+}
+
+
+video{
+    width: 365px;   
+}
+
+pre {
+    color: rgb(110, 109, 109);
+    font-size: 25px;
+}
+
+.footer {
+    background-color: rgba(75, 74, 74, 0.916);
+    margin-top: 50px
+}
+
+.allDivs {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+.leftDiv2,
+.rightDiv,
+.rightDiv2,
+.leftDiv {
+    width: 25%;
+    padding: 10px;
+}
+
+.footer2 {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.916);
+    text-align: center;
+    color: rgb(199, 199, 199);
+}

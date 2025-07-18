@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="store.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+</head>
+
+<body>
+
+    <div class="nav justify-content-center">
+        <img src="images/logo.png" alt="Not founded" class="logo">
+        <a class="nav-link active " href="index.html">Home</a>
+        <a class="nav-link active" href="train.html">Train</a>
+        <a class="nav-link active" href="store.html">Store</a>
+        <a class="nav-link active" href="#footer">About us</a>
+        <a class="nav-link active" href="index.html">Find us</a>
+        <a class="nav-link active" href="membership.html">Membership</a>
+        <a class="nav-link active" href="login.html">Login</a>
+        <a class="nav-link active" href="rigister.html">Rigister</a>
+        <a class="nav-link active" href="myAccount.html">My Account</a>
+        <a class="nav-link active" href="https://x.com/GoldsGym" class="fa fa-twitter"></a>
+        <a class="nav-link active" href="https://www.facebook.com/goldsgym/" class="fa fa-facebook"></a>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active c-item">
+                <img src="images/slide1.webp" class="d-block w-100 c-img" alt="Slide 1">
+                <div class="carousel-caption top-0 mt-4">
+                    <br><br>
+                    <br><br>
+                    <br><br>
+
+                    <p class="mt-5 fs-3 text-uppercase">Discover the hidden products</p>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+                </div>
+            </div>
+
+            <div class="carousel-item c-item">
+                <img src="images/slide2.webp" class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
+                    <p class="display-1 fw-bolder text-capitalize">3 available tours</p>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+            </div>
+
+            <div class="carousel-item c-item">
+                <img src="images/slide3.webp" class="d-block w-100 c-img" alt="Slide 3">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+                    <p class="display-1 fw-bolder text-capitalize">Go glacier hiking</p>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+            </div>
+
+            <div class="carousel-item c-item">
+                <img src="images/slide4.webp" class="d-block w-100 c-img" alt="Slide 4">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+                    <p style="opacity: 90%;" class="display-1 fw-bolder text-capitalize">MASSAGE CHAIRS</p>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div style="background-color: rgb(226, 227, 227);">
+
+        <div class="allProducts">
+
+            <div class="product">
+                <img src="images/store1.jpeg" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">120$</del> <b style="color: rgb(0, 172, 12);"> 100$</b>
+                    <p>mens Black Puffer Jacket with Detachable Hooded Neck.</p>
+                </h3>
+            </div>
+
+            <div class="product">
+                <img src="images/store2.jpeg" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">95$</del> <b style="color: rgb(0, 172, 12);"> 70$</b>
+                    <p>Gym Bag with External Pocket Sports Bag for Men and Women.</p>
+                </h3>
+            </div>
+            <div class="product">
+                <img src="images/store3.jpeg" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">185$</del> <b style="color: rgb(0, 172, 12);"> 150$</b>
+                    <p> Travel Bag with Wet Pocket, Portable Overnight Bags for Women.</p>
+                </h3>
+            </div>
+            <div class="product">
+                <img src="images/store4.png" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">50$</del> <b style="color: rgb(0, 172, 12);"> 35$</b>
+                    <p>Premium Kickboxing Gloves, MMA Gloves ,Half Finger Boxing.</p>
+                </h3>
+            </div>
+
+        </div>
+
+        <div class="allProducts">
+
+            <div class="product">
+                <img src="images/store5.jpg" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">120$</del> <b style="color: rgb(0, 172, 12);"> 100$</b>
+                    <p> Fitness tac-2000 motorized treadmill for exercises.</p>
+                </h3>
+            </div>
+
+            <div class="product">
+                <img src="images/store6.jpg" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">95$</del> <b style="color: rgb(0, 172, 12);"> 70$</b>
+                    <p> Top Fit MT-7023 Multi Gym- Home Gym 1 Station With Weights 45 Black.</p>
+                </h3>
+            </div>
+            <div class="product">
+                <img src="images/store7.jpg" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">185$</del> <b style="color: rgb(0, 172, 12);"> 150$</b>
+                    <p>100% Cotton Karate Uniform - Blue - Size 9</p>
+                </h3>
+            </div>
+            <div class="product">
+                <img src="images/store8.jpg" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">50$</del> <b style="color: rgb(0, 172, 12);"> 35$</b>
+                    <p>Brexem Soccer Ball - Official World Cup 2022 Pro Football Quality.</p>
+                </h3>
+            </div>
+
+        </div>
+        <div class="allProducts">
+
+            <div class="product">
+                <img src="images/productImage1.webp" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">120$</del> <b style="color: rgb(0, 172, 12);"> 100$</b>
+                    <p>A set of two dumbel -weight 10 kilo per dumbel.</p>
+                </h3>
+            </div>
+
+            <div class="product">
+                <img src="images/productImage2.webp" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">95$</del> <b style="color: rgb(0, 172, 12);"> 70$</b>
+                    <p>Golg's gym mens Black Jacket with Detachable Hooded Neck for trianing.</p>
+                </h3>
+            </div>
+            <div class="product">
+                <img src="images/productImage4.jpg" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">185$</del> <b style="color: rgb(0, 172, 12);"> 150$</b>
+                    <p>Energy Case Laptop Bag Three Piece School Backpack College.</p>
+                </h3>
+            </div>
+            <div class="product">
+                <img src="images/productImage3.webp" alt="" class="productImg">
+                <hr style="color: rgb(161, 135, 33);">
+
+                <a href="store.html" class="cartLink">
+                    <button class="cartButton">Add to cart</button>
+                </a>
+
+                <h3><b>Price : </b> <del style="color: brown;">50$</del> <b style="color: rgb(0, 172, 12);"> 35$</b>
+                    <p>Motivational Sport Water Bottles Set 3 Pieces 2L-1L-500ML (Black).</p>
+                </h3>
+            </div>
+
+
+        </div>
+        <!-- =================The footer================= -->
+
+        <footer class="footer" id="footer">
+
+            <div class="allDivs">
+                <div class="leftDiv">
+                    <h3>About Us</h3>
+                    <p>I am text block. Click edit button to <br>change this text. Lorem ipsum dolor sit <br> amet,
+                        consectetur. I am text block. Click <br> edit button to change this text. Lorem <br> ipsum dolor
+                        sit
+                        amet, consectetur.
+                        <br><br>We are the champions! We are the most amazing theme of all time, yeah.
+                    </p>
+                </div>
+
+
+                <div class="leftDiv2">
+                    <h3>Why we are special?</h3>
+                    <p>Our magical recipe.</p>
+
+                    <hr>
+                    <p>We care about environment.</p>
+
+                    <hr>
+                    <p>We are trusted by hundreads of clients.</p>
+                    <hr>
+                    <p>Social media loves us!</p>
+                    <hr>
+                    <p>Your health is our priority.</p>
+                    <hr>
+                </div>
+
+                <div class="rightDiv2">
+                    <h3>Opening Hours</h3>
+                    <p>Monday 10AM - 9PM</p>
+                    <hr>
+                    <p>Tuseday 10AM - 9PM</p>
+                    <hr>
+                    <p>Wednesday 10AM - 9PM</p>
+                    <hr>
+                    <p>Thursday 10AM - 10PM</p>
+                    <hr>
+                    <p>Friday 10AM - 10PM</p>
+                    <hr>
+
+                </div>
+
+                <div class="rightDiv">
+                    <h3>Contact Details</h3>
+                    <p>Manchester Road 123-78B</p>
+                    <hr>
+                    <p>Phone contact : 01270901118</p>
+                    <hr>
+                    <p>Friday 10AM - 10PM</p>
+                    <p>Weekends 10AM - 11PM</p>
+                    <p>Contact Details : Manchester Road 123-78B</p>
+                    <hr>
+                </div>
+
+            </div>
+        </footer>
+
+        <footer class="footer2">
+
+            <img src="./imgs/navicon-removebg-preview.png" alt="">
+
+            <p>Copyright 2024.All rights reseved.</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                    fill="#FFFFFF">
+                    <path
+                        d="M408-312h144q20.4 0 34.2-13.8Q600-339.6 600-360v-72h-72v48h-96v-192h96v48h72v-72q0-20.4-13.8-34.2Q572.4-648 552-648H408q-20.4 0-34.2 13.8Q360-620.4 360-600v240q0 20.4 13.8 34.2Q387.6-312 408-312Zm72.28 216Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Z" />
+                </svg><b>Khaled Saeed</b></p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

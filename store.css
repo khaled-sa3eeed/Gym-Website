@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.logo {
+    position: relative;
+    top: 2px;
+    left: -10px;
+    width: 40px;
+    height: 35px;
+
+}
+
+.footer {
+    background-color: rgba(7, 3, 3, 0.212);
+    
+}
+
+.allDivs {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+.leftDiv2,
+.rightDiv,
+.rightDiv2,
+.leftDiv {
+    width: 25%;
+    padding: 10px;
+}
+
+.footer2 {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.916);
+    text-align: center;
+    color: rgb(199, 199, 199);
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.allProducts {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(139, 159, 166, 0.194);
+}
+
+.product {
+    /* width: 23%; */
+    /* height: 400px; */
+
+    width: 300px;
+    height: 450px;
+    border: 2px solid #FFF;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    
+    &:hover {
+        img {
+            opacity: .8;
+        }
+
+        h3 {
+            transform: translate(0, 0);
+        }
+    }
+
+    img {
+        transition: 1.2s;
+    }
+
+    h3 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 5px 8px;
+        margin: 0;
+        border-top: 2px solid #FFF;
+        border-right: 2px solid #FFF;
+        color: #FFF;
+        font-size: 16px;
+        background-color: #333;
+        transform: translate(0, 100%);
+        transition: .4s;
+    }
+
+    border-radius: 19px;
+
+
+}
+
+
+.productImg {
+    width: 80%;
+    height: 65%;
+    border: 1px dotted rgb(161, 135, 33);
+    margin-top: 10px;
+    border-radius: 10%;
+}
+
+.product:hover {
+    color: brown;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.cartButton {
+    height: 35px;
+    background-color: rgba(154, 133, 0, 0.306)
+}
+
+.cartLink {
+    position: relative;
+    left: -10px;
+}
